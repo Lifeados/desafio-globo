@@ -3,7 +3,7 @@ import 'dart:convert' as convert;
 import 'package:desafio_globo/domain/entity/episode.dart';
 import 'package:http/http.dart' as http;
 
-class RemoateLoadTVShow {
+class RemoteLoadTVShow {
   Future<EpisodeResult?> load() async {
     final url = Uri.parse(
         'https://api.themoviedb.org/3/discover/tv?include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc');
